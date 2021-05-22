@@ -56,7 +56,6 @@ User.init(
         return updatedUserData;
       },
     },
-    // TABLE CONFIGURATION OPTIONS GO HERE (https://sequelize.org/v5/manual/models-definition.html#configuration))
 
     // pass in our imported sequelize connection (the direct connection to our database)
     sequelize,
@@ -67,7 +66,7 @@ User.init(
     // use underscores instead of camel-casing (i.e. `comment_text` and not `commentText`)
     underscored: true,
     // make it so our model name stays lowercase in the database
-    modelName: "user",
+    modelName: "User",
   }
 );
 
