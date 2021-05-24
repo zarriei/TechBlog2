@@ -1,13 +1,10 @@
 async function signupFormHandler(event) {
   event.preventDefault();
 
-  // getting data from the form
-  const username = document.querySelector("#username-signUp").value;
-  console.log(username);
-  const password = document.querySelector("#password-signUp").value;
-  console.log(password);
+  const username = document.querySelector("#username-signup").value.trim();
+  const password = document.querySelector("#password-signup").value.trim();
+
   if (username && password) {
-    console.log("hello");
     const response = await fetch("/api/users", {
       method: "POST",
       body: JSON.stringify({
@@ -16,11 +13,9 @@ async function signupFormHandler(event) {
       }),
       headers: { "Content-Type": "application/json" },
     });
-    // check the response status
     if (response.ok) {
       console.log("success");
 
-      // loginHandler();
       document.location.replace("/dashboard");
     } else {
       alert(response.statusText);
