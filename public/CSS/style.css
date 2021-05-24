@@ -2,7 +2,7 @@
   --primary: #b1d9e4;
   --secondary: #dce9d5;
   --tertiary: #17adad;
-  --light-dark: #0ec7d4;
+  --light-dark: #098894;
   --dark: #049c04;
   --border-radius: 0.3rem;
 }
@@ -19,6 +19,13 @@ body {
   color: var(--dark);
   line-height: 1.5;
   font-size: 24px;
+}
+#np {
+  color: crimson;
+}
+
+.np {
+  color: crimson;
 }
 
 h1,
@@ -63,18 +70,11 @@ p {
   display: block;
   margin: 5px 0;
   border-radius: var(--border-radius);
-  color: white;
+  color: rgb(240, 8, 8);
   border: none;
   outline: none;
-  background-color: var(--light-dark);
+  background-color: white;
   transform: translate(-1px, -1px);
-}
-
-.btn:hover {
-  color: var(--primary);
-  background-color: var(--tertiary);
-  transform: translate(0, 0);
-  box-shadow: 2px 2px var(--dark);
 }
 
 .btn-inline {
