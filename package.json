@@ -4,6 +4,7 @@
   "description": "tech-blog",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "start": "node server.js",
     "watch": "nodemon server.js",
     "seed": "node seeds/index.js"
@@ -31,8 +32,5 @@
   "devDependencies": {
     "jest": "^26.4.2",
     "nodemon": "^2.0.4"
-  },
-  "optionalDependencies": {
-    "fsevents": "^2.3.2"
   }
 }
