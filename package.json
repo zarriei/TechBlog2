@@ -4,6 +4,7 @@
   "description": "tech-blog",
   "main": "index.js",
   "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
     "test": "jest",
     "start": "node server.js",
     "watch": "nodemon server.js",
